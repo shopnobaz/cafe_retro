@@ -1,0 +1,205 @@
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+background-color: darkred;
+}
+
+a {
+  display: block;
+  padding: 10px;
+  color: white;
+  font-family: 'Spirax', cursive;
+  font-size: 35px;
+}
+
+nav{
+  position: fixed;
+  background-color:rgba(0,0,0,0.5);
+  width:100vw;
+  text-align:center;
+}
+
+nav>a{
+  color:#CCCCCC;
+  text-decoration:none;
+  display:inline-block;
+  padding:15px;
+}
+
+#hot{
+  background: url("img/hot.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  text-align: center;
+}
+
+#hot h1{
+  font-family: 'Spirax', cursive;
+  font-size: 80px;
+  box-sizing: border-box;
+  color: rgb(132, 31, 31);
+  margin: 20px;
+}
+
+#hot h2{
+  font-family: 'Poiret One', cursive;
+  font-size: 20px;
+  box-sizing: border-box;
+  background-color: rgba(132, 31, 31,0.9);
+  color: white;
+  margin: 10px;
+  padding: 20px 20px 20px 20px;
+  display: flex;
+}
+
+#hot h3{
+  font-family: 'Poiret One', cursive;
+  font-size: 18px;
+  box-sizing: border-box;
+  background-color: rgba(132, 31, 31,0.9);
+  color: white;
+  margin: 30px;
+  margin-left: 20%;
+  padding: 20px 100px 20px 100px;
+}
+
+#juicy{
+  background: url("img/juicy.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#juicy h1{
+  font-family: 'Spirax', cursive;
+  font-size: 80px;
+  box-sizing: border-box;
+  color: rgb(132, 31, 31);
+  margin: 20px;
+}
+
+#juicy h2{
+  font-family: 'Poiret One', cursive;
+  font-size: 20px;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: rgba(132, 31, 31,0.9);
+  color: white;
+  margin: 10px;
+  padding: 20px ;
+  min-width: 40%;
+}
+
+#juicy h3{
+  font-family: 'Poiret One', cursive;
+  font-size: 18px;
+  box-sizing: border-box;
+  background-color: rgba(132, 31, 31,0.9);
+  color: white;
+  margin: 30px;
+  margin-left: 20%;
+  padding: 20px 50px 20px 50px;
+}
+
+#cosy{
+  background: url("img/cosy.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#cosy h1{
+  font-family: 'Spirax', cursive;
+  font-size: 80px;
+  box-sizing: border-box;
+  color: rgb(132, 31, 31);
+  margin: 20px;
+}
+
+#cosy h2{
+  font-family: 'Poiret One', cursive;
+  font-size: 20px;
+  box-sizing: border-box;
+  background-color: rgba(132, 31, 31,0.9);
+  color: white;
+  margin: 10px;
+  padding: 20px ;
+  min-width: 40%;
+}
+
+#cosy h3{
+  font-family: 'Poiret One', cursive;
+  font-size: 18px;
+  box-sizing: border-box;
+  background-color: rgba(132, 31, 31,0.9);
+  color: white;
+  margin: 30px;
+  margin-left: 20%;
+  padding: 20px 100px 20px 100px;
+}
+
+.colum-layout{
+  display: flex;
+  background-color: rgba(22, 21, 21, 0.9);
+  font-family: 'Poiret One', cursive;
+  color: White;
+  box-sizing: border-box;
+  padding: 20px 35px 20px 35px;
+  min-width: 35%;
+  flex-wrap: nowrap;
+  margin-left: 10%;
+} 
+
+.main-column{
+  font-family: 'Poiret One', cursive;
+  flex:1;
+  text-align: left;
+  flex-wrap: nowrap;
+}
+
+.sidebar-1{
+  font-family: 'Poiret One', cursive;
+  flex:1;
+  flex-wrap: nowrap;
+  text-align: right;
+}
+
+@media (max-width: 600px) {
+  .colum-layout{
+    flex-wrap: nowrap;
+    min-width: 100%;
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  #hot h3, #juicy h3, #cosy h3{
+  display: none;
+  }
+}
+
+
